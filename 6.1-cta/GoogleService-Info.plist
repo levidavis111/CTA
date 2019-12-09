@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>570690470625-osi22kmijhth4mumjt6thfmple2n3c0d.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.570690470625-osi22kmijhth4mumjt6thfmple2n3c0d</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBlf5M0U_QSEn16FdPJM6deE7uxXjDPiWI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>570690470625</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com-example.--1-cta</string>
+	<key>PROJECT_ID</key>
+	<string>cta-review</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cta-review.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:570690470625:ios:b92202379b2d14800ceda0</string>
+	<key>DATABASE_URL</key>
+	<string>https://cta-review.firebaseio.com</string>
+</dict>
+</plist>

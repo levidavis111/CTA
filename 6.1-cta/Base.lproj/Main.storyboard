@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Art Detail View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ArtDetailViewController" id="BYZ-38-t0r" customClass="ArtDetailViewController" customModule="__1_cta" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l67-FS-ic3">
+                                <rect key="frame" x="82" y="64" width="250" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="1Cd-Cg-NfL"/>
+                                    <constraint firstAttribute="width" constant="250" id="3rU-7P-bEW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Info" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqo-tJ-AhM">
+                                <rect key="frame" x="172" y="284" width="70" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBy-dL-6NN">
+                                <rect key="frame" x="186" y="324.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4b-r4-5nP">
+                                <rect key="frame" x="244" y="266" width="20.5" height="56.5"/>
+                                <state key="normal" image="heart" catalog="system"/>
+                                <connections>
+                                    <action selector="faveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YfC-Gt-LCQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8he-IS-iaj">
+                                <rect key="frame" x="161" y="375" width="92" height="30"/>
+                                <state key="normal" title="See Favorites">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="seeFavoritesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="54n-Vt-fh7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eBy-dL-6NN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="19G-dd-82H"/>
+                            <constraint firstItem="eqo-tJ-AhM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Nm-ku-FL6"/>
+                            <constraint firstItem="8he-IS-iaj" firstAttribute="top" secondItem="eBy-dL-6NN" secondAttribute="bottom" constant="30" id="6sI-mf-hy3"/>
+                            <constraint firstItem="eBy-dL-6NN" firstAttribute="top" secondItem="Q4b-r4-5nP" secondAttribute="bottom" constant="2" id="KiI-uw-xbn"/>
+                            <constraint firstItem="Q4b-r4-5nP" firstAttribute="top" secondItem="l67-FS-ic3" secondAttribute="bottom" constant="2" id="TUw-Ao-1JV"/>
+                            <constraint firstItem="l67-FS-ic3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Vde-zO-MA2"/>
+                            <constraint firstItem="l67-FS-ic3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="YS0-jF-oe1"/>
+                            <constraint firstItem="Q4b-r4-5nP" firstAttribute="leading" secondItem="eqo-tJ-AhM" secondAttribute="trailing" constant="2" id="cyU-jA-jOx"/>
+                            <constraint firstItem="8he-IS-iaj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dTj-tl-I7E"/>
+                            <constraint firstItem="eqo-tJ-AhM" firstAttribute="top" secondItem="l67-FS-ic3" secondAttribute="bottom" constant="20" id="g5O-Lh-aK5"/>
+                            <constraint firstItem="eBy-dL-6NN" firstAttribute="top" secondItem="eqo-tJ-AhM" secondAttribute="bottom" constant="20" id="v3d-DC-fgR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="artDetailImageView" destination="l67-FS-ic3" id="kxM-S6-vfI"/>
+                        <outlet property="faveButtonOutlet" destination="Q4b-r4-5nP" id="43j-iz-MbG"/>
+                        <outlet property="mainInfoLabel" destination="eqo-tJ-AhM" id="n2y-s5-14F"/>
+                        <outlet property="moreInfoLabel" destination="eBy-dL-6NN" id="xMo-Dg-ytd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" catalog="system" width="64" height="54"/>
+    </resources>
+</document>
