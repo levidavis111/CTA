@@ -5,4 +5,5 @@ Ticketmaster app users can search events by city, while museum app users can sea
 
 ## Built With
 Firebase
+
 UIKit
